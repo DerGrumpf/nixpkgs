@@ -692,9 +692,14 @@ in
   grocy = runTest ./grocy.nix;
   grow-partition = runTest ./grow-partition.nix;
   grub = runTest ./grub.nix;
+<<<<<<< Updated upstream
+=======
+  gs1200-exporter = runTest ./gs1200-exporter.nix { };
+>>>>>>> Stashed changes
   guacamole-server = runTest ./guacamole-server.nix;
   guix = handleTest ./guix { };
   gvisor = runTest ./gvisor.nix;
+  gs1200-exporter = handleTest ./gs1200-exporter.nix { };
   h2o = import ./web-servers/h2o {
     inherit runTest;
     inherit (pkgs) lib;

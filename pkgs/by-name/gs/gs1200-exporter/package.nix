@@ -7,6 +7,7 @@
 buildGoModule rec {
   pname = "gs1200-exporter";
   version = "2.11.12";
+  __structuredAttrs = true;
   src = fetchFromGitHub {
     owner = "robinelfrink";
     repo = "gs1200-exporter";
